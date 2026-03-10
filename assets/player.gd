@@ -19,9 +19,11 @@ func _process(delta: float) -> void:
 	position.y = clamp(position.y,0, screensize.y)
 
 	if velocity.length() > 0:
-		$AnimatedSprite2D.animation = "run"
+		
+			$AnimatedSprite2D.animation = "run"
 	else:
-		$AnimatedSprite2D.animation = "idle"
+		if $AnimatedSprite2D.animation != "idle":
+			$AnimatedSprite2D.animation = "idle"
 	if velocity.x != 0:
 		$AnimatedSprite2D.flip_h = velocity.x < 0
 		

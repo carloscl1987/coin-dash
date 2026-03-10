@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Coin Dash"
-run/main_scene="uid://b1gbaarlxm2oy"
+run/main_scene="uid://fth60w1mqmsw"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -25,3 +25,7 @@ window/stretch/mode="canvas_items"
 [dotnet]
 
 project/assembly_name="Coin Dash"
+
+[global_group]
+
+coins=""

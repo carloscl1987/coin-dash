@@ -40,7 +40,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("6_cbn5g")
 }],
-"loop": false,
+"loop": true,
 "name": &"idle",
 "speed": 8.0
 }, {
@@ -72,14 +72,14 @@ animations = [{
 size = Vector2(29, 43)
 
 [node name="Player" type="Area2D"]
-position = Vector2(111, 2)
 script = ExtResource("1_ah73p")
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_m0ick")
-animation = &"run"
+animation = &"idle"
+frame_progress = 0.4997395
 offset = Vector2(0, -5)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
